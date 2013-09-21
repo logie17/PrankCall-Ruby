@@ -5,7 +5,7 @@ require 'prankcall'
 
 Gem::Specification.new do |spec|
   spec.name          = "prankcall-ruby"
-  spec.version       = Prankcall::Ruby::VERSION
+  spec.version       = PrankCall::VERSION
   spec.authors       = ["Logan Bell"]
   spec.email         = ["loganbell@gmail.com"]
   spec.description   = %q{A silly port of the world famous perl PrankCall}
