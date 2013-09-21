@@ -1,1 +1,1 @@
-require 'PrankCall'
+require 'prankcall'
