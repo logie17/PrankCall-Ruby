@@ -5,7 +5,6 @@ class PrankCall
   def initialize(params)
     @host = params[:host]
     @port = params[:port]
-
   end
 
   def get(params)
