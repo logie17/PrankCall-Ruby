@@ -5,10 +5,12 @@ class PrankCall
   def initialize(params)
     @host = params[:host]
     @port = params[:port]
+
   end
 
   def get(params)
-    TCPSocket.open(@host,@port)
+    query_params = URI::encode_www_form(params[:params]) 
+    TCPSocket.open(@host,@port).print("GET #{params[:path]}?#{query_params} HTTP/1.1\nHost: 127.0.0.1\nUser-Agent: $user_agent\nContent-Type: application/x-www-form-urlencoded\n\n")
     1
   end
 
