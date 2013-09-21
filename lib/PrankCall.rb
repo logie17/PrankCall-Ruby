@@ -5,3 +5,4 @@ class PrankCall
     @port = param[:port]
   end
 end
+
